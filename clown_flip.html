@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>Images alternées avec le déplacement du curseur de la souris.</title>
+  </head>
+  <body>
+            La même dimension des deux images évite le déplacement de 
+        <img id=”clown” src="Images/clown1.jpeg" border=”1” alt=”image de clown”>
+            tout ce qui l’encadre.
+        <script type="text/javascript">
+          let myImage = document.getElementById(“clown”);
+
+
+          myImage.addEventListener(“mouseover”', function ()
+            {
+              myImage.src = "Images/clown2.jpeg";
+            }
+          );
+
+
+          myImage.addEventListener(“mouseout”, function ()
+           {
+             myImage.src = "Images/clown1.jpeg";
+           }
+         );
+    </script>
+  </body>
+</html>
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------
